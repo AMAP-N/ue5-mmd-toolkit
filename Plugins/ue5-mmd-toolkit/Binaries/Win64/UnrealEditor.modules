@@ -1,0 +1,13 @@
+{
+	"BuildId": "55116800",
+	"Modules": 
+	{
+		"AMAP5_Deform": "UnrealEditor-AMAP5_Deform.dll",
+		"AMAP5_Editor": "UnrealEditor-AMAP5_Editor.dll",
+		"AMAP5_Importer": "UnrealEditor-AMAP5_Importer.dll",
+		"AMAP5_Runtime": "UnrealEditor-AMAP5_Runtime.dll",
+		"MMDCameraImporter": "UnrealEditor-MMDCameraImporter.dll",
+		"PmxPhysics_Editor": "UnrealEditor-PmxPhysics_Editor.dll",
+		"PmxPhysics_Runtime": "UnrealEditor-PmxPhysics_Runtime.dll"
+	}
+}
