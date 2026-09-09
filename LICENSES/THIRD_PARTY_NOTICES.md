@@ -12,6 +12,7 @@ ue5-mmd-toolkit uses the following third-party software.
 | [Bullet Physics SDK](https://github.com/bulletphysics/bullet3) | PMX rigid-body and joint simulation | zlib |
 | [FFmpeg 7.1.1, Gyan.dev essentials build](https://www.gyan.dev/ffmpeg/builds/) | Video and media conversion used by the MetaHuman workflow | GPL v3 |
 | [VRM4U](https://github.com/ruyo/VRM4U) | Optional material and animation integration; not bundled | MIT |
+| [UE-MMD-Camera-Importer](https://github.com/noname0310/UE-MMD-Camera-Importer) | Reference implementation for the VMD camera importer | MIT, Copyright (c) 2023 noname0310 |
 
 The Avalonia UI distribution includes `libSkiaSharp.dll`, `libHarfBuzzSharp.dll`, and `av_libglesv2.dll`.
 

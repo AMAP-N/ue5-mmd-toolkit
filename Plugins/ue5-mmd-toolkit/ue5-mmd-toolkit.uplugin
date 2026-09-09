@@ -30,7 +30,7 @@
 			"LoadingPhase": "PostEngineInit"
 		},
 		{
-			"Name": "MMDCameraImporter",
+			"Name": "AMAP5_CameraVmd",
 			"Type": "Editor",
 			"LoadingPhase": "Default"
 		},
