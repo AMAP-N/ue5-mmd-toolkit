@@ -5,8 +5,14 @@
 	"FriendlyName": "ue5-mmd-toolkit",
 	"Description": "animation and model asset pipeline",
 	"Category": "Animation",
+	"CreatedBy": "hato",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EngineVersion": "5.8.0",
 	"CanContainContent": true,
-	"Installed": false,
+	"Installed": true,
 	"Modules": [
 		{
 			"Name": "AMAP5_Runtime",
@@ -63,12 +69,5 @@
 			"Enabled": true,
 			"Optional": true
 		}
-	],
-	"CreatedBy": "hato",
-	"CreatedByURL": "",
-	"DocsURL": "",
-	"MarketplaceURL": "",
-	"SupportURL": "",
-	"IsBetaVersion": false,
-	"IsExperimentalVersion": false
+	]
 }
