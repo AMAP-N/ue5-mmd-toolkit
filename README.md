@@ -1,6 +1,6 @@
 # ue5-mmd-toolkit
 
-Unreal Engine 5でMikuMikuDance向けデータを扱うための、Windows用プリコンパイル済みプラグインです。
+Unreal Engine 5でMMD向けデータを扱うための、Windows用プラグインです。
 
 ![ue5-mmd-toolkit](docs/images/thumbnail.png)
 
@@ -8,7 +8,6 @@ Unreal Engine 5でMikuMikuDance向けデータを扱うための、Windows用プ
 
 - Unreal Engine 5.8
 - Windows 11 / Win64
-- バイナリ配布版（ソースコードは含まれていません）
 
 異なるUnreal Engineバージョンでは利用できません。
 
@@ -70,10 +69,6 @@ PMXファイルをContent Browserへドラッグ＆ドロップし、表示さ�
 - `UE Toon`: MMDに近い見た目を目的とした、ue5-mmd-toolkit独自のマテリアル
 - `UE Standard`: Unreal Engine標準のライティング環境へ移行しやすいマテリアル
 - `(VRM4U)` 表記のマテリアル: VRM4Uが導入されている場合に使用する任意連携
-
-## 配布内容
-
-このリポジトリはUE 5.8 / Win64向けの実行用バイナリを収録しています。開発用Source、Intermediate、PDBは含まれていません。
 
 ## ライセンス
 
