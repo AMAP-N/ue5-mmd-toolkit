@@ -2,7 +2,7 @@
 
 Unreal Engine 5でMMD向けデータを扱うための、Windows用プラグインです。
 
-![ue5-mmd-toolkit](docs/images/thumbnail.png)
+![ue5-mmd-toolkit](docs/images/thumbnail2.png)
 
 ## 対応環境
 
