@@ -70,16 +70,10 @@ PMXファイルをContent Browserへドラッグ＆ドロップし、表示さ�
 - `UE Standard`: Unreal Engine標準のライティング環境へ移行しやすいマテリアル
 - `(VRM4U)` 表記のマテリアル: VRM4Uが導入されている場合に使用する任意連携
 
-## ライセンス
-
-本体のライセンスは [LICENSE](LICENSE) を参照してください。
-
-使用している第三者コンポーネントについては [Third-Party Notices](LICENSES/THIRD_PARTY_NOTICES.md) を参照してください。
-
 ---
 
 ## English
 
-`ue5-mmd-toolkit` is a precompiled Windows plugin for importing and using MikuMikuDance assets in Unreal Engine 5.8.
+`ue5-mmd-toolkit` is a plugin for importing and using MikuMikuDance assets in Unreal Engine 5.8.
 
-Copy `Plugins/ue5-mmd-toolkit` into your project's `Plugins` directory, enable the plugin, and restart Unreal Editor. This binary distribution targets UE 5.8 / Win64 and does not include source code, intermediate files, or debug symbols.
+Copy `Plugins/ue5-mmd-toolkit` into your project's `Plugins` directory, enable the plugin, and restart Unreal Editor.
