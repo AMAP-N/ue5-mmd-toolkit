@@ -7,10 +7,13 @@ model: Sour暄
 
 ## 対応環境
 
-- Unreal Engine 5.8
-- Windows 11 / Win64
+- **Epic Games ランチャー版の Unreal Engine 5.8.x**（5.8.0 / 5.8.1 / 5.8.2 など、5.8 系のホットフィックス）
+- Windows 10 (22H2) / Windows 11、64-bit
 
-異なるUnreal Engineバージョンでは利用できません。
+バイナリのみの配布です。ソースは含まれないため、以下では利用できません。
+
+- Unreal Engine 5.7 以前 / 5.9 以降
+- GitHub からソースビルドしたエンジン、スタジオ独自ビルドなどランチャー版以外のエンジン
 
 ## 主な機能
 
@@ -20,8 +23,8 @@ model: Sour暄
 - PMX IK、付与親、物理演算への対応
 - VMDモーションおよびVMDカメラのインポート
 - PMX向けの `UE Toon` / `UE Standard` マテリアル
-- PMX用IK RigおよびPost Process Animation Blueprintの生成
-- MetaHumanアニメーションからPMXモデルへのリターゲット支援
+- PMX用IK Rig / FK Control Rig の生成
+- Post Process Animation Blueprint の生成（VRM4U 導入時のみ）
 - VRM4Uマテリアルとの任意連携
 
 ## インストール
@@ -42,24 +45,30 @@ YourProject/
       └─ ue5-mmd-toolkit.uplugin
 ```
 
-4. プロジェクトをUnreal Engine 5.8で開きます。
+4. プロジェクトをランチャー版の Unreal Engine 5.8.x で開きます。
 5. 必要に応じて「編集」>「プラグイン」から `ue5-mmd-toolkit` を有効にし、Editorを再起動します。
 
 ## 必須プラグイン
 
-次のUnreal Engine標準プラグインを使用します。
+次のUnreal Engine標準プラグインを使用します。`ue5-mmd-toolkit` を有効にすると自動で有効化されます。
 
+- Control Rig
+- IK Rig
 - Compute Framework
 - Deformer Graph
 
-無効になっている場合は有効化し、Editorを再起動してください。
+手動で無効化されている場合は有効化し、Editorを再起動してください。
 
-## 任意連携
+## 任意連携（VRM4U）
 
-- VRM4U
-- MetaHuman
+VRM4U は必須ではありません。`UE Toon` / `UE Standard`、PMXインポート、SDEF などの基本機能は VRM4U に依存しません。
 
-これらは必須ではありません。`UE Toon` と `UE Standard`、PMXインポート、SDEFなどの基本機能は、VRM4Uに依存しません。
+VRM4U を同じ `Plugins` フォルダへ入れて有効化すると、次が使えます。
+
+- `(VRM4U)` 表記の MToon 系マテリアル（マテリアルタイプの選択肢に追加されます）
+- Post Process Animation Blueprint の生成（IK / 物理 / モーフのノード配線）
+
+VRM4U が無い場合、`(VRM4U)` 表記のマテリアルタイプはインポート画面に表示されません。
 
 ## 基本的な使い方
 
@@ -75,6 +84,17 @@ PMXファイルをContent Browserへドラッグ＆ドロップし、表示さ�
 
 ## English
 
-`ue5-mmd-toolkit` is a plugin for importing and using MikuMikuDance assets in Unreal Engine 5.8.
+`ue5-mmd-toolkit` is a plugin for importing and using MikuMikuDance assets in Unreal Engine 5.
 
-Copy `Plugins/ue5-mmd-toolkit` into your project's `Plugins` directory, enable the plugin, and restart Unreal Editor.
+### Requirements
+
+- **Epic Games Launcher build of Unreal Engine 5.8.x** (5.8.0 / 5.8.1 / 5.8.2, i.e. any 5.8 hotfix)
+- Windows 10 (22H2) / Windows 11, 64-bit
+
+This is a binary-only distribution with no source, so it does **not** work on UE 5.7 or earlier, UE 5.9 or later, or engines built from source.
+
+### Install
+
+Copy `Plugins/ue5-mmd-toolkit` into your project's `Plugins` directory, open the project with a Launcher build of UE 5.8.x, enable the plugin, and restart Unreal Editor. Control Rig, IK Rig, Compute Framework and Deformer Graph are enabled automatically.
+
+Drop VRM4U into the same `Plugins` folder to unlock the optional MToon (VRM4U) material types and post-process AnimBP generation. Without VRM4U the `(VRM4U)` material types are hidden in the import dialog.

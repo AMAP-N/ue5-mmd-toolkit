@@ -1,16 +1,11 @@
 {
 	"FileVersion": 3,
-	"Version": 1,
-	"VersionName": "1.0",
+	"Version": 201,
+	"VersionName": "2.0.1",
+	"EngineVersion": "5.8.0",
 	"FriendlyName": "ue5-mmd-toolkit",
 	"Description": "animation and model asset pipeline",
 	"Category": "Animation",
-	"CreatedBy": "hato",
-	"CreatedByURL": "",
-	"DocsURL": "",
-	"MarketplaceURL": "",
-	"SupportURL": "",
-	"EngineVersion": "5.8.0",
 	"CanContainContent": true,
 	"Installed": true,
 	"Modules": [
@@ -52,6 +47,14 @@
 	],
 	"Plugins": [
 		{
+			"Name": "IKRig",
+			"Enabled": true
+		},
+		{
+			"Name": "ControlRig",
+			"Enabled": true
+		},
+		{
 			"Name": "ComputeFramework",
 			"Enabled": true
 		},
@@ -63,11 +66,13 @@
 			"Name": "VRM4U",
 			"Enabled": true,
 			"Optional": true
-		},
-		{
-			"Name": "MetaHuman",
-			"Enabled": true,
-			"Optional": true
 		}
-	]
+	],
+	"CreatedBy": "hato",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false
 }
