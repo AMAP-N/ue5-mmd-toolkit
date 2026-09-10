@@ -1,26 +1,25 @@
 # ue5-mmd-toolkit
 
-Unreal Engine 5でMMD向けデータを扱うための、Windows用プラグインです。
+Unreal Engine 5でMMD形式データを扱うためのWindowsプラグインです。
 
 ![ue5-mmd-toolkit](docs/images/thumbnail2.png)
 model: Sour暄
 
 ## 対応環境
 
-- **Epic Games ランチャー版の Unreal Engine 5.8.x**（5.8.0 / 5.8.1 / 5.8.2 など、5.8 系のホットフィックス）
-- Windows 10 (22H2) / Windows 11、64-bit
+- Epic Games Launcher版 Unreal Engine 5.8.x
+- Windows 10 (22H2) / Windows 11, 64-bit
 
-バイナリのみの配布です。ソースは含まれないため、以下では利用できません。
+バイナリ配布のため、以下は利用できません。
 
-- Unreal Engine 5.7 以前 / 5.9 以降
-- GitHub からソースビルドしたエンジン、スタジオ独自ビルドなどランチャー版以外のエンジン
+- UE ≤ 5.7 / UE 5.9+
+- GitHubからソースビルドしたエンジン、スタジオ独自ビルドなどランチャー版以外のエンジン
 
 ## 主な機能
 
 - PMXモデルのインポート
-- PMXのボーン、モーフ、表示枠、剛体、Jointデータの取り込み
-- SDEF / QDEFを含むスキニング処理
-- PMX IK、付与親、物理演算への対応
+- SDEF含むスキニング処理
+- PMX IK、付与親、物理演算の対応
 - VMDモーションおよびVMDカメラのインポート
 - PMX向けの `UE Toon` / `UE Standard` マテリアル
 - PMX用IK Rig / FK Control Rig の生成
