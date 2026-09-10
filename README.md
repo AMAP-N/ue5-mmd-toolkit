@@ -3,7 +3,7 @@
 Unreal Engine 5でMMD形式データを扱うためのWindowsプラグインです。
 
 ![ue5-mmd-toolkit](docs/images/thumbnail2.png)
-model: Sour暄
+model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
 
 ## 対応環境
 
