@@ -5,6 +5,7 @@
 [![Platform](https://img.shields.io/badge/platform-Windows%20x64-blue)](#)
 [![Release](https://img.shields.io/github/v/release/AMAP-N/ue5-mmd-toolkit)](https://github.com/AMAP-N/ue5-mmd-toolkit/releases)
 
+[English](README.md)｜[日本語](README_ja.md)
 
 ## 概要
 ue5-mmd-toolkit (AMAP5 V2) は、Unreal Engine 5でMMDフォーマットのPMX/VMDを扱うためのプラグインです。
