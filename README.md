@@ -17,10 +17,10 @@ Unreal Engine is gaining attention as a real-time engine that's strong on both f
 ![ue5-mmd-toolkit](docs/images/thumbnail2.png)
 model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
 
-> [!WARNING]
-> Because UE leans heavily toward being a renderer, export functionality is not a high implementation priority.
-> Detailed asset editing is better suited to a DCC tool, so this plugin is not intended to cover the entire pipeline by itself.
-> Material support is focused on semi-realistic to photo-realistic looks. (Toon/cel-shaded looks see little benefit from being rendered in UE, so they are not a focus.)
+> [!NOTE]
+>- Because UE leans heavily toward being a renderer, export functionality is not a high implementation priority.
+>- Detailed asset editing is better suited to a DCC tool, so this plugin is not intended to cover the entire pipeline by itself.
+>- Material support is focused on semi-realistic to photo-realistic looks. (Toon/cel-shaded looks see little benefit from being rendered in UE, so they are not a focus.)
 
 
 ## Requirements
@@ -84,16 +84,17 @@ The following are **not** supported:
 3. (Optional) If you want to use VRM4U material types, place the bundled `Plugins/VRM4U` into your project's `Plugins` folder.
 4. (Optional) If you want to use MetaHuman Mocap, enable the required plugins via `MetaHuman Animator Markerless Motion Capture (Check)`.
 5. Place the `Plugins/ue5-mmd-toolkit` folder into your project's `Plugins` folder.
-   With the optional pieces included, the final layout should look like this:
-```text
-YourProject/                       (project root)
-├─ YourProject.uproject
-└─ Plugins/
-   ├─ ue5-mmd-toolkit/            (this plugin)
-   │  └─ ue5-mmd-toolkit.uplugin  (keep this folder as-is under Plugins)
-   └─ VRM4U/                      (optional)
-      └─ VRM4U.uplugin            (keep this folder as-is under Plugins)
-```
+> [!TIP]
+> With the optional pieces included, the final layout should look like this:
+> ```text
+> YourProject/                       (project root)
+> ├─ YourProject.uproject
+> └─ Plugins/
+>   ├─ ue5-mmd-toolkit/            (this plugin)
+>   │  └─ ue5-mmd-toolkit.uplugin  (keep this folder as-is under Plugins)
+>   └─ VRM4U/                      (optional)
+>      └─ VRM4U.uplugin            (keep this folder as-is under Plugins)
+>```
 6. Launch the project.
 7. Drag and drop PMX/VMD files into the Content Browser to import them.
 8. For additional imports, use the "ue5-mmd-toolkit" menu as needed.
