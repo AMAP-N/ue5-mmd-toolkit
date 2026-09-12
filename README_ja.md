@@ -17,7 +17,7 @@ Unreal Engineは、MCP対応やMetaHuman Mocap，DCCツールからのアセッ�
 ![ue5-mmd-toolkit](docs/images/thumbnail2.png)
 model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
 
-> [!WARNING]
+> [!NOTE]
 > UEはレンダラーの側面が強いため、エクスポート機能の実装優先度は低いです。
 > アセットの詳細編集はDCCツールの方が得意であるため、このプラグインだけで全ての工程が完結することを想定していません。
 > セミリアル〜フォトリアルのマテリアル対応が中心です。(トゥーンやセルルックはUEでレンダリングするメリットが薄いため)
@@ -83,16 +83,17 @@ model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
 3. (任意)VRM4Uのマテリアルタイプを使う場合は、同梱の `Plugins/VRM4U` をプロジェクトの `Plugins` フォルダに配置します。
 4. (任意)MetaHuman Mocapを使う場合は、`MetaHuman Animator Markerless Motion Capture (Check)`から必要プラグインを有効化します。
 5. `Plugins/ue5-mmd-toolkit` フォルダをプロジェクトの `Plugins` フォルダに配置します。
-   最終的な配置が次の構成になることを想定しています。(任意配置込みの場合)
-```text
-YourProject/                       (プロジェクトルート)
-├─ YourProject.uproject
-└─ Plugins/
-   ├─ ue5-mmd-toolkit/            (本プラグイン)
-   │  └─ ue5-mmd-toolkit.uplugin  (Plugins下はそのまま配置)
-   └─ VRM4U/                      (任意)
-      └─ VRM4U.uplugin            (Plugins下はそのまま配置)
-```
+> [!TIP]
+> 最終的な配置が次の構成になることを想定しています。(任意配置込みの場合)
+> ```text
+> YourProject/                       (プロジェクトルート)
+> ├─ YourProject.uproject
+> └─ Plugins/
+>   ├─ ue5-mmd-toolkit/            (本プラグイン)
+>   │  └─ ue5-mmd-toolkit.uplugin  (Plugins下はそのまま保持)
+>   └─ VRM4U/                      (任意)
+>      └─ VRM4U.uplugin            (Plugins下はそのまま保持)
+>```
 6. プロジェクトを起動します。
 7. コンテンツブラウザにPMX/VMDをドロップインポートします。
 8. 必要に応じて、「ue5-mmd-toolkit」メニューから追加でインポートします。
