@@ -60,7 +60,7 @@ The following are **not** supported:
 
 ## Features
 ### Implemented
-- PMX model import (generates a SkeletalMesh; auto-builds materials: UE Standard / Toon via VRM4U / white-texture fallback)
+- PMX model import (generate a SkeletalMesh / Material type: UE Standard, UE Toon, etc. / white-texture fallback)
 - Reproduces PMX bone constraints (append rotation/translation, axis limits, IK chains/links) — via the "PMX Bone Solver" AnimGraph node
 - Physics (rigid body/joint) import (converted through Bullet Physics, written into the AnimBlueprint's RigidBody node, with in-editor debug display)
 - Reproduces PMX morphs (vertex/bone/material/group) — via the "PMX Morph" AnimGraph node
