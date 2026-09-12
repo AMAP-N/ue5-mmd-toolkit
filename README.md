@@ -1,4 +1,8 @@
 # ue5-mmd-toolkit
+[![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5.8.x-0E1128?logo=unrealengine)](https://www.unrealengine.com/)
+[![License](https://img.shields.io/github/license/AMAP-N/ue5-mmd-toolkit)](https://github.com/AMAP-N/ue5-mmd-toolkit/blob/main/LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Windows%20x64-blue)](#)
+[![Release](https://img.shields.io/github/v/release/AMAP-N/ue5-mmd-toolkit)](https://github.com/AMAP-N/ue5-mmd-toolkit/releases)
 
 Unreal Engine 5でMMD形式データを扱うためのWindowsプラグインです。
 
