@@ -42,17 +42,17 @@ model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
 
 
 ## 特徴
-※一般的なPMX/VMDインポート手法：主に、DCCツール経由のFBX変換を指す
+※一般的なPMX/VMDインポート手法：主に、DCCツール経由のFBX変換を指す。
 
-| 項目 | ue5-mmd-toolkit | 一般的手法との違い・補足 |
+| 項⁠目 | ue5-mmd-toolkit | 一般的手法との違い・補足 |
 |---|---|---|
-| <span style="white-space:nowrap">頂点変形</span> | Deformer Graph(DG_SDEF)によるGPU SDEF/QDEFブレンドで保持・自動リペア | UE標準はSDEF非対応のため、FBX変換経由では通常SDEF情報が失われ、SDEF頂点のあるメッシュが破綻する |
-| <span style="white-space:nowrap">ボーン制約</span> | 付与(親子)回転・移動、軸制限、IKチェーンを専用AnimGraphノード「PMX Bone Solver」でベイクせず解決 | 多くの手法はアニメーションをベイクした時点の見た目のみを再現し、後から差し替えたモーションには制約が追従しない |
-| <span style="white-space:nowrap">モーフ</span> | 頂点V/ボーンB/材質M/グループGモーフをAnimGraphノード「PMX Morph」でモーフカーブとして評価(循環参照検出あり) | グループモーフの重み配分やボーンモーフの加算は個別実装が必要になりがち |
-| <span style="white-space:nowrap">リグ生成</span> | IKリグ/指・表情付属コントロールリグをワンステップで生成 | 通常はスケルトンのみが得られ、IKリグ/コントロールリグの構築は手動 |
-| <span style="white-space:nowrap">物理演算</span> | リジッドボディ/ジョイントをBullet Physicsで解釈し、アニメーションBPのRigidbodyノードへ直接書き込み(エディタ上で剛体をクリック選択してデバッグ可能) | 髪/スカートなどの揺れもの物理はPhysicsAssetなどの手動作成が必要になりがち |
-| <span style="white-space:nowrap">カメラ</span> | シーケンサーへカメラアクター/トラックとして取り込み、カメラカットタイプを指定可能 | カメラモーションを扱うインポータは少ない。noname0310様のMmdCameraImporterを移植/改良し、焦点ズレ等の問題を修正済み |
-| <span style="white-space:nowrap">モーキャプ</span> | MetaHuman Mocap実行の手順を簡素化し、結果をSMPLモデルで確認可能 | モーキャプ実行周辺の設定がかなり面倒 |
+| 頂⁠点⁠変⁠形 | Deformer Graph(DG_SDEF)によるGPU SDEF/QDEFブレンドで保持・自動リペア | UE標準はSDEF非対応のため、FBX変換経由では通常SDEF情報が失われ、SDEF頂点のあるメッシュが破綻する |
+| ボ⁠ー⁠ン⁠制⁠約 | 付与(親子)回転・移動、軸制限、IKチェーンを専用AnimGraphノード「PMX Bone Solver」でベイクせず解決 | 多くの手法はアニメーションをベイクした時点の見た目のみを再現し、後から差し替えたモーションには制約が追従しない |
+| モ⁠ー⁠フ | 頂点V/ボーンB/材質M/グループGモーフをAnimGraphノード「PMX Morph」でモーフカーブとして評価(循環参照検出あり) | グループモーフの重み配分やボーンモーフの加算は個別実装が必要になりがち |
+| リ⁠グ⁠生⁠成 | IKリグ/指・表情付属コントロールリグをワンステップで生成 | 通常はスケルトンのみが得られ、IKリグ/コントロールリグの構築は手動 |
+| 物⁠理⁠演⁠算 | リジッドボディ/ジョイントをBullet Physicsで解釈し、アニメーションBPのRigidbodyノードへ直接書き込み(エディタ上で剛体をクリック選択してデバッグ可能) | 髪/スカートなどの揺れもの物理はPhysicsAssetなどの手動作成が必要になりがち |
+| カ⁠メ⁠ラ | シーケンサーへカメラアクター/トラックとして取り込み、カメラカットタイプを指定可能 | カメラモーションを扱うインポータは少ない。noname0310様のMmdCameraImporterを移植/改良し、焦点ズレ等の問題を修正済み |
+| モ⁠ー⁠キ⁠ャ⁠プ | MetaHuman Mocap実行の手順を簡素化し、結果をSMPLモデルで確認可能 | モーキャプ実行周辺の設定がかなり面倒 |
 
 ## 機能
 ### 実装済み
