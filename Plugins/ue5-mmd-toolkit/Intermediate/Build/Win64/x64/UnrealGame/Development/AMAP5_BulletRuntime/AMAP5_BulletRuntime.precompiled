@@ -1,0 +1,10 @@
+{
+  "OutputFiles": [
+    "Module.AMAP5_BulletRuntime.cpp.obj",
+    "PPR_AnimNode_RigidbodyDebug.cpp.obj",
+    "PPR_AnimNode.cpp.obj",
+    "PPR_BulletWorld.cpp.obj",
+    "PPR_LoaderLibrary.cpp.obj",
+    "PPR_Module.cpp.obj"
+  ]
+}
