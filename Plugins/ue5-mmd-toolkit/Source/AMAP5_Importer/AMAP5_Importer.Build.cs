@@ -4,7 +4,6 @@ public class AMAP5_Importer : ModuleRules
 {
     public AMAP5_Importer(ReadOnlyTargetRules Target) : base(Target)
     {
-        bUsePrecompiled = true;
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
         PublicDependencyModuleNames.AddRange(new string[]
         {
@@ -41,7 +40,6 @@ public class AMAP5_Importer : ModuleRules
             "AMAP5_Deform",
             "AMAP5_Editor",
             "AMAP5_BulletRuntime",
-            "AMAP5_MetaHumanMocap",
             "ContentBrowser",
             "ContentBrowserData",
             "PropertyEditor",
@@ -60,5 +58,3 @@ public class AMAP5_Importer : ModuleRules
         });
     }
 }
-
-

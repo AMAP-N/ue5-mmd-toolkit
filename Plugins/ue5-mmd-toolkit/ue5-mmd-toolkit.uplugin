@@ -31,7 +31,7 @@
     {
       "Name": "AMAP5_MetaHumanMocap",
       "Type": "Editor",
-      "LoadingPhase": "PostEngineInit"
+      "LoadingPhase": "None"
     },
     {
       "Name": "AMAP5_Importer",

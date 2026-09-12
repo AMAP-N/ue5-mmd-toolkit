@@ -5,9 +5,8 @@ public class AMAP5_MetaHumanMocap : ModuleRules
 {
     public AMAP5_MetaHumanMocap(ReadOnlyTargetRules Target) : base(Target)
     {
-        bUsePrecompiled = true;
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine" });
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "AMAP5_Runtime" });
         PrivateDependencyModuleNames.AddRange(new string[] { "UnrealEd", "AssetRegistry", "AssetTools", "Projects", "Json", "EditorScriptingUtilities" });
         string MetaHumanPerf = Path.Combine(EngineDirectory, "Plugins", "MetaHuman", "MetaHumanAnimator", "Source", "MetaHumanPerformance", "MetaHumanPerformance.Build.cs");
         bool bForceNoMetaHuman = !string.IsNullOrEmpty(System.Environment.GetEnvironmentVariable("AMAP5_NO_METAHUMAN"));
@@ -19,5 +18,3 @@ public class AMAP5_MetaHumanMocap : ModuleRules
         else { PublicDefinitions.Add("AMAP5_WITH_METAHUMAN=0"); }
     }
 }
-
-
