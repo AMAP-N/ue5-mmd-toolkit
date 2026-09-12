@@ -2,12 +2,13 @@
 	"BuildId": "55116800",
 	"Modules": 
 	{
-		"AMAP5_CameraVmd": "UnrealEditor-AMAP5_CameraVmd.dll",
+		"AMAP5_BulletEditor": "UnrealEditor-AMAP5_BulletEditor.dll",
+		"AMAP5_BulletRuntime": "UnrealEditor-AMAP5_BulletRuntime.dll",
 		"AMAP5_Deform": "UnrealEditor-AMAP5_Deform.dll",
 		"AMAP5_Editor": "UnrealEditor-AMAP5_Editor.dll",
 		"AMAP5_Importer": "UnrealEditor-AMAP5_Importer.dll",
+		"AMAP5_MetaHumanMocap": "UnrealEditor-AMAP5_MetaHumanMocap.dll",
 		"AMAP5_Runtime": "UnrealEditor-AMAP5_Runtime.dll",
-		"PmxPhysics_Editor": "UnrealEditor-PmxPhysics_Editor.dll",
-		"PmxPhysics_Runtime": "UnrealEditor-PmxPhysics_Runtime.dll"
+		"AMAP5_VmdCamera": "UnrealEditor-AMAP5_VmdCamera.dll"
 	}
 }
