@@ -44,7 +44,7 @@ model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
 ## 特徴
 他の一般的なPMX/VMDインポート手法(Blender経由のFBX変換等)との違い
 
-| 項目 | ue5-mmd-toolkitの挙動 | 一般的な手法との違い |
+| 項目 | ue5-mmd-toolkit | 一般的手法との違い |
 |---|---|---|
 | SDEF変形 | Deformer Graph(DG_SDEF)によるGPU SDEF/QDEFブレンドで保持・自動リペア | UEはSDEF未対応のため、FBX変換経由では通常SDEF情報が失われ、腕捩り等でメッシュが破綻しやすい |
 | PMXボーン制約 | 付与(親子)回転・移動、軸制限、IKチェーンを専用AnimGraphノード「PMX Bone Solver」でベイクせず解決 | 多くの手法はアニメーションをベイクした時点の見た目のみを再現し、後から差し替えたモーションには制約が追従しない |
