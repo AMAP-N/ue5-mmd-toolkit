@@ -49,7 +49,7 @@ model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
 
 | 項⁠目 | ue5-mmd-toolkit | 一般的手法との違い・補足 |
 |---|---|---|
-| 頂⁠点⁠変⁠形 | Deformer Graph(DG_SDEF)によるGPU SDEF/QDEFブレンドで保持・自動リペア | UE標準はSDEF非対応のため、FBX変換経由では通常SDEF情報が失われ、SDEF頂点のあるメッシュが破綻する |
+| 頂⁠点⁠変⁠形 | Deformer GraphによるGPU SDEF/QDEFブレンドで保持・自動リペア | UE標準はSDEF非対応のため、FBX変換経由では通常SDEF情報が失われ、SDEF頂点のあるメッシュが破綻する |
 | ボ⁠ー⁠ン⁠制⁠約 | 付与(親子)回転・移動、軸制限、IKチェーンを専用AnimGraphノード「PMX Bone Solver」でベイクせず解決 | 多くの手法はアニメーションをベイクした時点の見た目のみを再現し、後から差し替えたモーションには制約が追従しない |
 | モ⁠ー⁠フ | 頂点V/ボーンB/材質M/グループGモーフをAnimGraphノード「PMX Morph」でモーフカーブとして評価(循環参照検出あり) | グループモーフの重み配分やボーンモーフの加算は個別実装が必要になりがち |
 | リ⁠グ⁠生⁠成 | IKリグ/指・表情付属コントロールリグをワンステップで生成 | 通常はスケルトンのみが得られ、IKリグ/コントロールリグの構築は手動 |
@@ -59,7 +59,7 @@ model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
 
 ## 機能
 ### 実装済み
-- PMXモデルインポート(SkeletalMesh生成、マテリアル自動構築: UE標準 / Toon(VRM4U連携)/ 白テクスチャ代替)
+- PMXモデルインポート(SkeletalMesh生成、マテリアルタイプ、白テクスチャ代替)
 - PMXボーン制約の再現(付与回転・移動、軸制限、IKチェーン/リンク) — AnimGraphノード「PMX Bone Solver」
 - 物理(剛体・ジョイント)インポート(Bullet Physics変換、AnimBlueprintのRigidBodyノードへの書き込み、エディタ上のデバッグ表示)
 - PMXモーフの再現(頂点/ボーン/材質/グループモーフ) — AnimGraphノード「PMX Morph」
