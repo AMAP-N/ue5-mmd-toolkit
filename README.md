@@ -1,4 +1,4 @@
-# ue5-mmd-toolkit
+# ue5-mmd-toolkit (AMAP5 V2)
 [![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5.8.x-0E1128?logo=unrealengine)](https://www.unrealengine.com/)
 [![License](https://img.shields.io/github/license/AMAP-N/ue5-mmd-toolkit)](https://github.com/AMAP-N/ue5-mmd-toolkit/blob/main/LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20x64-blue)](#)
