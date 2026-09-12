@@ -87,9 +87,9 @@ YourProject/                       (プロジェクトルート)
 ├─ YourProject.uproject
 └─ Plugins/
    ├─ ue5-mmd-toolkit/            (本プラグイン)
-   │  └─ ue5-mmd-toolkit.uplugin
+   │  └─ ue5-mmd-toolkit.uplugin  (Plugins下はそのまま配置)
    └─ VRM4U/                      (任意)
-      └─ VRM4U.uplugin
+      └─ VRM4U.uplugin            (Plugins下はそのまま配置)
 ```
 6. プロジェクトを起動します。
 7. コンテンツブラウザにPMX/VMDをドロップインポートします。
