@@ -7,7 +7,7 @@
 
 
 ## 概要
-ue5-mmd-toolkit (AMAP5 V2) は、Unreal Engine 5上でMMDフォーマットのPMX/VMDを扱うためのプラグインです。
+ue5-mmd-toolkit (AMAP5 V2) は、Unreal Engine 5でMMDフォーマットのPMX/VMDを扱うためのプラグインです。
 
 PMXインポートではスケルタルメッシュ、スケルトン、アニメーションBP，マテリアルインスタンスなどの生成をします。
 このプラグインは、Unreal Engineでより高度なワークフローにPMXを活用するための拡張ツールでもあります。
