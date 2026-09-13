@@ -87,13 +87,13 @@ The following are **not** supported:
 > [!TIP]
 > With the optional pieces included, the final layout should look like this:
 > ```text
-> YourProject/                       (project root)
+> YourProject/                        (project root)
 > ├─ YourProject.uproject
 > └─ Plugins/
->   ├─ ue5-mmd-toolkit/            (this plugin)
+>   ├─ ue5-mmd-toolkit/             (this plugin)
 >   │  └─ ue5-mmd-toolkit.uplugin  (keep this folder as-is under Plugins)
->   └─ VRM4U/                      (optional)
->      └─ VRM4U.uplugin            (keep this folder as-is under Plugins)
+>   └─ VRM4U/                       (optional)
+>      └─ VRM4U.uplugin             (keep this folder as-is under Plugins)
 >```
 6. Launch the project.
 7. Drag and drop PMX/VMD files into the Content Browser to import them.
