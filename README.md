@@ -4,7 +4,6 @@
 [![License](https://img.shields.io/github/license/AMAP-N/ue5-mmd-toolkit)](https://github.com/AMAP-N/ue5-mmd-toolkit/blob/main/LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20x64-blue)](#)
 [![Release](https://img.shields.io/github/v/release/AMAP-N/ue5-mmd-toolkit)](https://github.com/AMAP-N/ue5-mmd-toolkit/releases)
-[![Discord](https://img.shields.io/discord/1287729918100246654?logo=discord&logoColor=white&label=Discord)](https://discord.gg/uUxUgzHRxs)
   
 
 [English](README.md)｜[日本語](README_ja.md)
@@ -120,4 +119,5 @@ For third-party license information, see [THIRD_PARTY_NOTICES](LICENSES/THIRD_PA
 ## Support & Contact
 If you have questions or run into an issue, please open an Issue in this repository or contact the author directly.
 
-AMAP-N [@Kapelz_](https://x.com/Kapelz_)
+AMAP-N X [@Kapelz_](https://x.com/Kapelz_)
+AMAP-N Discord [Kapelz](https://discord.gg/uUxUgzHRxs)
