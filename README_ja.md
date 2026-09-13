@@ -5,6 +5,7 @@
 [![Platform](https://img.shields.io/badge/platform-Windows%20x64-blue)](#)
 [![Release](https://img.shields.io/github/v/release/AMAP-N/ue5-mmd-toolkit)](https://github.com/AMAP-N/ue5-mmd-toolkit/releases)
 
+
 [English](README.md)｜[日本語](README_ja.md)
 
 ## 概要
@@ -117,4 +118,5 @@ MIT License
 ## サポート・問い合わせ
 質問や問題がある場合は、このリポジトリでIssueを立てるか、作者へ直接連絡してください。
 
-AMAP-N [@Kapelz_](https://x.com/Kapelz_)
+AMAP-N X [@Kapelz_](https://x.com/Kapelz_)
+AMAP-N Discord [Kapelz](https://discord.gg/uUxUgzHRxs)
