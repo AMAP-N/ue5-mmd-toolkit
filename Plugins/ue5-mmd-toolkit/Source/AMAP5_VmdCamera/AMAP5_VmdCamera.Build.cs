@@ -1,18 +1,14 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
 using UnrealBuildTool;
 
 public class AMAP5_VmdCamera : ModuleRules
 {
     public AMAP5_VmdCamera(ReadOnlyTargetRules Target) : base(Target)
     {
-        bUsePrecompiled = true;
         PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
-        
+
         PublicIncludePaths.AddRange(
             new string[]
             {
-                // ... add public include paths required here ...
             }
         );
 
@@ -20,7 +16,6 @@ public class AMAP5_VmdCamera : ModuleRules
         PrivateIncludePaths.AddRange(
             new string[]
             {
-                // ... add other private include paths required here ...
             }
         );
 
@@ -31,7 +26,6 @@ public class AMAP5_VmdCamera : ModuleRules
                 "MovieScene",
                 "CinematicCamera",
                 "Sequencer",
-                // ... add other public dependencies that you statically link with here ...
             }
         );
 
@@ -53,7 +47,6 @@ public class AMAP5_VmdCamera : ModuleRules
                 "DesktopPlatform",
                 "CinematicCamera",
                 "MovieSceneTracks",
-                // ... add private dependencies that you statically link with here ...	
             }
         );
 
@@ -61,10 +54,7 @@ public class AMAP5_VmdCamera : ModuleRules
         DynamicallyLoadedModuleNames.AddRange(
             new string[]
             {
-                // ... add any modules that your module loads dynamically here ...
             }
         );
     }
 }
-
-

@@ -1,10 +1,9 @@
-using UnrealBuildTool;
+﻿using UnrealBuildTool;
 
 public class AMAP5_BulletEditor : ModuleRules
 {
     public AMAP5_BulletEditor(ReadOnlyTargetRules Target) : base(Target)
     {
-        bUsePrecompiled = true;
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
         PrivateDependencyModuleNames.AddRange(new string[]
@@ -12,6 +11,7 @@ public class AMAP5_BulletEditor : ModuleRules
             "Core",
             "CoreUObject",
             "Engine",
+            "InputCore",
             "AMAP5_BulletRuntime",
             "AMAP5_Runtime",
             "AnimGraph",
@@ -35,5 +35,3 @@ public class AMAP5_BulletEditor : ModuleRules
         });
     }
 }
-
-

@@ -40,6 +40,7 @@ public class AMAP5_Importer : ModuleRules
             "AMAP5_Deform",
             "AMAP5_Editor",
             "AMAP5_BulletRuntime",
+            "SkeletalMeshEditor",
             "ContentBrowser",
             "ContentBrowserData",
             "PropertyEditor",
@@ -50,7 +51,6 @@ public class AMAP5_Importer : ModuleRules
             "ControlRigEditor",
             "RigVM",
             "RigVMDeveloper",
-            // AMAP5 UI bridge (replaces the PySide6 menu / windows with a C# app)
             "ToolMenus",
             "Projects",
             "Json",
