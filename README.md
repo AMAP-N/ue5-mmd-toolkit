@@ -1,9 +1,8 @@
 ![ue5-mmd-toolkit](docs/images/ue5-mmd-toolkit.png)
 
-[![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5.8.x%20%7C%205.9.x-0E1128?logo=unrealengine)](https://www.unrealengine.com/)
+[![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5.8%20%7C%205.9-0E1128?logo=unrealengine)](https://www.unrealengine.com/)
 [![License](https://img.shields.io/github/license/AMAP-N/ue5-mmd-toolkit)](https://github.com/AMAP-N/ue5-mmd-toolkit/blob/main/LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20x64-blue)](#)
-[![Release](https://img.shields.io/github/v/release/AMAP-N/ue5-mmd-toolkit)](https://github.com/AMAP-N/ue5-mmd-toolkit/releases)
   
 
 [English](README.md)｜[日本語](README_ja.md)
