@@ -1,8 +1,8 @@
 using UnrealBuildTool;
 
-public class AMAP5_Deform : ModuleRules
+public class UMT_Deform : ModuleRules
 {
-    public AMAP5_Deform(ReadOnlyTargetRules Target) : base(Target)
+    public UMT_Deform(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 

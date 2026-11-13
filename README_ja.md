@@ -1,6 +1,6 @@
 ![ue5-mmd-toolkit](docs/images/ue5-mmd-toolkit.png)
 
-[![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5.8.x-0E1128?logo=unrealengine)](https://www.unrealengine.com/)
+[![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5.8.x%20%7C%205.9.x-0E1128?logo=unrealengine)](https://www.unrealengine.com/)
 [![License](https://img.shields.io/github/license/AMAP-N/ue5-mmd-toolkit)](https://github.com/AMAP-N/ue5-mmd-toolkit/blob/main/LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20x64-blue)](#)
 [![Release](https://img.shields.io/github/v/release/AMAP-N/ue5-mmd-toolkit)](https://github.com/AMAP-N/ue5-mmd-toolkit/releases)
@@ -9,7 +9,7 @@
 [English](README.md)｜[日本語](README_ja.md)
 
 ## 概要
-ue5-mmd-toolkit (AMAP5 V2) は、Unreal Engine 5でMMDフォーマットのPMX/VMDを扱うためのプラグインです。
+ue5-mmd-toolkit は、Unreal Engine 5でMMDフォーマットのPMX/VMDを扱うためのプラグインです。
 
 PMXインポートではスケルタルメッシュ、スケルトン、アニメーションBP，マテリアルインスタンスなどの生成をします。
 このプラグインは、Unreal Engineでより高度なワークフローにPMXを活用するための拡張ツールでもあります。
@@ -26,12 +26,12 @@ model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
 
 ## 動作要件
 ### システム
-- ランチャー版 Unreal Engine 5.8.x
+- ランチャー版 Unreal Engine 5.8.x または 5.9.x
 - Windows11 64-bit
 
 以下は利用できません。
 
-- UE ≤ 5.7 / UE 5.9+
+- UE ≤ 5.7
 - GitHubからソースビルドしたエンジン、スタジオ独自ビルドなどランチャー版以外のエンジン
 
 ### プラグイン
@@ -41,8 +41,7 @@ model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
   - Compute Framework
   - Deformer Graph
 - 任意
-  - VRM4U(同梱プラグイン, VRM4Uマテリアルタイプを使う場合は必要)
-  - MetaHuman / MetaHuman Animator(MetaHuman Mocapを使う場合は必要)
+  - VRM4U(UE 5.8版パッケージに同梱。UE 5.9では別途導入。VRM4Uマテリアルタイプを使う場合は必要)
 
 
 ## 特徴
@@ -56,7 +55,6 @@ model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
 | リ⁠グ⁠生⁠成 | IKリグ/指・表情付属コントロールリグをワンステップで生成 | 通常はスケルトンのみが得られ、IKリグ/コントロールリグの構築は手動 |
 | 物⁠理⁠演⁠算 | リジッドボディ/ジョイントをBullet Physicsで解釈し、アニメーションBPのRigidbodyノードへ直接書き込み(エディタ上で剛体をクリック選択してデバッグ可能) | 髪/スカートなどの揺れもの物理はPhysicsAssetなどの手動作成が必要になりがち |
 | カ⁠メ⁠ラ | シーケンサーへカメラアクター/トラックとして取り込み、カメラカットタイプを指定可能 | カメラモーションを扱うインポータは少ない。noname0310様のMmdCameraImporterを移植/改良し、焦点ズレ等の問題を修正済み |
-| モ⁠ー⁠キ⁠ャ⁠プ | MetaHuman Mocap実行の手順を簡素化し、結果をSMPLモデルで確認可能 | モーキャプ実行周辺の設定がかなり面倒 |
 
 ## 機能
 ### 実装済み
@@ -69,20 +67,13 @@ model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
 - コントロールリグ生成(FKコントロール・表情モーフのフェイスコントロールパネルなど)
 - VMDモーションインポート(フレームレート選択可)
 - VMDカメラインポート(Sequencerへのカメラアクター/トラック追加、カメラカットタイプ指定)
-- MetaHuman Animatorマーカーレスモーションキャプチャ連携(動画ドロップ → ボディキャプチャ実行 → Performanceアセット出力)
-- 外部UIブリッジ AMAP5.UI(Avalonia/.NET)
-
-### タスク
-- コントロールリグ (beta)
-- IKリグ (beta)
-- MetaHuman MocapのPMXリターゲット
-
+- ツールウィンドウとインポート設定の日本語・英語・簡体字中国語表示(エディタの言語に追従)
 
 ## インストール 〜 使用方法
-1. Unreal Engine 5.8(Win64)のプロジェクトを用意します。
-2. 「プラグイン」ウィンドウで次が有効になっているか確認します：IK Rig / Control Rig / Compute Framework / Deformer Graph
-3. (任意)VRM4Uのマテリアルタイプを使う場合は、同梱の `Plugins/VRM4U` をプロジェクトの `Plugins` フォルダに配置します。
-4. (任意)MetaHuman Mocapを使う場合は、`MetaHuman Animator Markerless Motion Capture (Check)`から必要プラグインを有効化します。
+1. Unreal Engine 5.8 または 5.9(Win64)のプロジェクトを用意します。
+2. [Releases](https://github.com/AMAP-N/ue5-mmd-toolkit/releases) から、お使いのエンジンに合うパッケージ(UE 5.8: `UMT_5-8_<バージョン>.zip`、UE 5.9: `UMT_5-9_<バージョン>.zip`)をダウンロードして展開します。
+3. 「プラグイン」ウィンドウで次が有効になっているか確認します：IK Rig / Control Rig / Compute Framework / Deformer Graph
+4. (任意)VRM4Uのマテリアルタイプを使う場合は、UE 5.8版パッケージの `Plugins/VRM4U` をプロジェクトの `Plugins` フォルダに配置します。UE 5.9ではVRM4Uを別途導入してください。
 5. `Plugins/ue5-mmd-toolkit` フォルダをプロジェクトの `Plugins` フォルダに配置します。
 > [!TIP]
 > 最終的な配置が次の構成になることを想定しています。(任意配置込みの場合)
@@ -100,6 +91,9 @@ model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
 8. 必要に応じて、「ue5-mmd-toolkit」メニューから追加でインポートします。
 9. カメラVMDは、シーケンサーのVMDアイコンをクリックしてインポートします。
 
+
+> [!NOTE]
+> MetaHuman MocapとPMX 2.1テスト機能は、本プラグインから終了しました。AMAP-Studioで提供しています: https://amap.hatoghx.com/items/amap-studio
 
 ## 免責事項
 本プラグインは、Epic Games, Unreal Engine, MikuMikuDanceその他関連する企業・団体とは一切関係ありません。

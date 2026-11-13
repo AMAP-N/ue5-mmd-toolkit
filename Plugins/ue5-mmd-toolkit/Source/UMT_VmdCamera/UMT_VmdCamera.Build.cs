@@ -1,8 +1,8 @@
 using UnrealBuildTool;
 
-public class AMAP5_VmdCamera : ModuleRules
+public class UMT_VmdCamera : ModuleRules
 {
-    public AMAP5_VmdCamera(ReadOnlyTargetRules Target) : base(Target)
+    public UMT_VmdCamera(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 

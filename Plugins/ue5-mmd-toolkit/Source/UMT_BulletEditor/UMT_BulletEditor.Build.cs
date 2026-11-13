@@ -1,8 +1,8 @@
 ﻿using UnrealBuildTool;
 
-public class AMAP5_BulletEditor : ModuleRules
+public class UMT_BulletEditor : ModuleRules
 {
-    public AMAP5_BulletEditor(ReadOnlyTargetRules Target) : base(Target)
+    public UMT_BulletEditor(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
@@ -12,8 +12,8 @@ public class AMAP5_BulletEditor : ModuleRules
             "CoreUObject",
             "Engine",
             "InputCore",
-            "AMAP5_BulletRuntime",
-            "AMAP5_Runtime",
+            "UMT_BulletRuntime",
+            "UMT_Runtime",
             "AnimGraph",
             "AnimGraphRuntime",
             "AnimationEditMode",

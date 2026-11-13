@@ -1,9 +1,9 @@
 using UnrealBuildTool;
 using System.IO;
 
-public class AMAP5_BulletRuntime : ModuleRules
+public class UMT_BulletRuntime : ModuleRules
 {
-    public AMAP5_BulletRuntime(ReadOnlyTargetRules Target) : base(Target)
+    public UMT_BulletRuntime(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = ModuleRules.PCHUsageMode.NoPCHs;
         PrecompileForTargets = PrecompileTargetsType.Any;

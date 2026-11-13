@@ -1,6 +1,6 @@
 ![ue5-mmd-toolkit](docs/images/ue5-mmd-toolkit.png)
 
-[![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5.8.x-0E1128?logo=unrealengine)](https://www.unrealengine.com/)
+[![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5.8.x%20%7C%205.9.x-0E1128?logo=unrealengine)](https://www.unrealengine.com/)
 [![License](https://img.shields.io/github/license/AMAP-N/ue5-mmd-toolkit)](https://github.com/AMAP-N/ue5-mmd-toolkit/blob/main/LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20x64-blue)](#)
 [![Release](https://img.shields.io/github/v/release/AMAP-N/ue5-mmd-toolkit)](https://github.com/AMAP-N/ue5-mmd-toolkit/releases)
@@ -9,7 +9,7 @@
 [English](README.md)｜[日本語](README_ja.md)
 
 ## Overview
-ue5-mmd-toolkit (AMAP5 V2) is a plugin for working with MMD-format PMX/VMD assets in Unreal Engine 5.
+ue5-mmd-toolkit is a plugin for working with MMD-format PMX/VMD assets in Unreal Engine 5.
 
 The PMX importer generates a Skeletal Mesh, Skeleton, Animation Blueprint, material instances, and more.
 This plugin also serves as an extension toolset for bringing PMX assets into more advanced Unreal Engine workflows.
@@ -26,12 +26,12 @@ model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
 
 ## Requirements
 ### System
-- Unreal Engine 5.8.x, Launcher build
+- Unreal Engine 5.8.x or 5.9.x, Launcher build
 - Windows 11, 64-bit
 
 The following are **not** supported:
 
-- UE ≤ 5.7 / UE 5.9+
+- UE ≤ 5.7
 - Any engine other than a Launcher build — source-built engines from GitHub, studio-custom builds, etc.
 
 ### Plugins
@@ -41,8 +41,7 @@ The following are **not** supported:
   - Compute Framework
   - Deformer Graph
 - Optional
-  - VRM4U (bundled plugin; required only if you use the VRM4U material type)
-  - MetaHuman / MetaHuman Animator (required only if you use MetaHuman Mocap)
+  - VRM4U (bundled with the UE 5.8 package; install it separately for UE 5.9; required only if you use the VRM4U material type)
 
 
 ## Highlights
@@ -56,7 +55,6 @@ The following are **not** supported:
 | Rig generation | Generates an IK Rig plus a Control Rig with finger and facial controls, in one step | Normally you only get a bare skeleton; building the IK Rig / Control Rig is manual work |
 | Physics | Rigid bodies and joints are interpreted through Bullet Physics and written directly into the Animation Blueprint's RigidBody node (rigid bodies can be clicked to select for in-editor debugging) | Jiggle physics for hair, skirts, etc. usually requires manually building a PhysicsAsset |
 | Camera | Imported into Sequencer as camera actors/tracks, with a selectable camera-cut import type | Few importers handle camera motion. Ported and substantially reworked from noname0310's MmdCameraImporter, with focus-drift and other issues fixed |
-| Mocap | Streamlines running MetaHuman Mocap; results can be reviewed via an SMPL model | Setting up mocap capture is normally a real hassle |
 
 
 ## Features
@@ -70,20 +68,13 @@ The following are **not** supported:
 - Control Rig generation (FK controls, facial-morph control panel, etc.)
 - VMD motion import (selectable frame rate)
 - VMD camera import (adds camera actors/tracks to Sequencer, selectable camera-cut type)
-- MetaHuman Animator markerless mocap integration (drop a video → runs body capture → outputs a Performance asset)
-- External UI bridge, AMAP5.UI (Avalonia/.NET)
-
-### Roadmap
-- Control Rig (beta)
-- IK Rig (beta)
-- Retargeting MetaHuman Mocap results onto PMX
-
+- Tool windows and import dialogs in English, Japanese and Simplified Chinese (follows the editor language)
 
 ## Installation & Usage
-1. Set up an Unreal Engine 5.8 (Win64) project.
-2. In the Plugins window, confirm the following are enabled: IK Rig / Control Rig / Compute Framework / Deformer Graph.
-3. (Optional) If you want to use VRM4U material types, place the bundled `Plugins/VRM4U` into your project's `Plugins` folder.
-4. (Optional) If you want to use MetaHuman Mocap, enable the required plugins via `MetaHuman Animator Markerless Motion Capture (Check)`.
+1. Set up an Unreal Engine 5.8 or 5.9 (Win64) project.
+2. Download the package that matches your engine version from [Releases](https://github.com/AMAP-N/ue5-mmd-toolkit/releases): `UMT_5-8_<version>.zip` for UE 5.8, `UMT_5-9_<version>.zip` for UE 5.9, and extract it.
+3. In the Plugins window, confirm the following are enabled: IK Rig / Control Rig / Compute Framework / Deformer Graph.
+4. (Optional) If you want to use VRM4U material types, place `Plugins/VRM4U` from the UE 5.8 package into your project's `Plugins` folder. For UE 5.9, install VRM4U separately.
 5. Place the `Plugins/ue5-mmd-toolkit` folder into your project's `Plugins` folder.
 > [!TIP]
 > With the optional pieces included, the final layout should look like this:
@@ -101,6 +92,9 @@ The following are **not** supported:
 8. For additional imports, use the "ue5-mmd-toolkit" menu as needed.
 9. For camera VMD, click the VMD icon in Sequencer to import.
 
+
+> [!NOTE]
+> MetaHuman Mocap and the PMX 2.1 test features are no longer part of this plugin. They are provided by AMAP-Studio: https://amap.hatoghx.com/items/amap-studio
 
 ## Disclaimer
 This plugin is not affiliated with Epic Games, Unreal Engine, MikuMikuDance, or any other related company or organization.

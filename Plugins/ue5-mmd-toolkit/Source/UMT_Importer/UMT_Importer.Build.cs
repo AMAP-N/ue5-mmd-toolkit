@@ -1,8 +1,8 @@
 using UnrealBuildTool;
 
-public class AMAP5_Importer : ModuleRules
+public class UMT_Importer : ModuleRules
 {
-    public AMAP5_Importer(ReadOnlyTargetRules Target) : base(Target)
+    public UMT_Importer(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
         PublicDependencyModuleNames.AddRange(new string[]
@@ -13,7 +13,7 @@ public class AMAP5_Importer : ModuleRules
             "DeveloperSettings",
             "InterchangeCore",
             "PhysicsCore",
-            "AMAP5_Runtime",
+            "UMT_Runtime",
             "MeshDescription",
         });
 
@@ -37,9 +37,9 @@ public class AMAP5_Importer : ModuleRules
             "SlateCore",
             "InputCore",
             "AssetTools",
-            "AMAP5_Deform",
-            "AMAP5_Editor",
-            "AMAP5_BulletRuntime",
+            "UMT_Deform",
+            "UMT_Editor",
+            "UMT_BulletRuntime",
             "SkeletalMeshEditor",
             "ContentBrowser",
             "ContentBrowserData",

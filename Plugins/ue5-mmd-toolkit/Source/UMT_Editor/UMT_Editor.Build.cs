@@ -1,13 +1,13 @@
 using UnrealBuildTool;
 
-public class AMAP5_Editor : ModuleRules
+public class UMT_Editor : ModuleRules
 {
-    public AMAP5_Editor(ReadOnlyTargetRules Target) : base(Target)
+    public UMT_Editor(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
         PublicDependencyModuleNames.AddRange(
-            new string[] { "Core", "CoreUObject", "Engine", "AMAP5_Runtime", "AnimGraphRuntime" }
+            new string[] { "Core", "CoreUObject", "Engine", "UMT_Runtime", "AnimGraphRuntime" }
         );
 
         PrivateDependencyModuleNames.AddRange(

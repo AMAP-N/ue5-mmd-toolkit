@@ -1,0 +1,12 @@
+ue5-mmd-toolkit - References (not bundled)
+
+ue5-mmd-toolkit by AMAP-N.
+
+The projects below are not included in this plugin. Their sources and binaries are not distributed with it. They were consulted while developing it, and some behavior was aligned with them. Each project is governed by its own license, which you can read at the address shown.
+
+
+1. mmd-anim
+   Copyright (c) 2026 Yohawing
+   Project: https://github.com/yohawing/mmd-anim
+   License: MIT (https://github.com/yohawing/mmd-anim/blob/main/LICENSE)
+   Use: the IK solver behavior of the PMX Bone Solver was aligned with the results of this project.

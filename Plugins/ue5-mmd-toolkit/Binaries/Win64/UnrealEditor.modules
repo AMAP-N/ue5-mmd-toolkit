@@ -9,6 +9,13 @@
 		"AMAP5_Importer": "UnrealEditor-AMAP5_Importer.dll",
 		"AMAP5_MetaHumanMocap": "UnrealEditor-AMAP5_MetaHumanMocap.dll",
 		"AMAP5_Runtime": "UnrealEditor-AMAP5_Runtime.dll",
-		"AMAP5_VmdCamera": "UnrealEditor-AMAP5_VmdCamera.dll"
+		"AMAP5_VmdCamera": "UnrealEditor-AMAP5_VmdCamera.dll",
+		"UMT_BulletEditor": "UnrealEditor-UMT_BulletEditor.dll",
+		"UMT_BulletRuntime": "UnrealEditor-UMT_BulletRuntime.dll",
+		"UMT_Deform": "UnrealEditor-UMT_Deform.dll",
+		"UMT_Editor": "UnrealEditor-UMT_Editor.dll",
+		"UMT_Importer": "UnrealEditor-UMT_Importer.dll",
+		"UMT_Runtime": "UnrealEditor-UMT_Runtime.dll",
+		"UMT_VmdCamera": "UnrealEditor-UMT_VmdCamera.dll"
 	}
 }

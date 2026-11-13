@@ -1,56 +1,45 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.0",
-	"FriendlyName": "AMAP5 Pro",
+	"VersionName": "2.1.0",
+	"FriendlyName": "ue5-mmd-toolkit",
 	"Description": "animation and model asset pipeline",
 	"Category": "Animation",
-	"CreatedBy": "hato",
-	"CreatedByURL": "",
-	"DocsURL": "",
-	"MarketplaceURL": "",
-	"SupportURL": "",
-	"EngineVersion": "5.8.0",
 	"CanContainContent": true,
-	"Installed": true,
+	"Installed": false,
 	"Modules": [
 		{
-			"Name": "AMAP5_Runtime",
+			"Name": "UMT_Runtime",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		},
 		{
-			"Name": "AMAP5_Editor",
+			"Name": "UMT_Editor",
 			"Type": "UncookedOnly",
 			"LoadingPhase": "PreDefault"
 		},
 		{
-			"Name": "AMAP5_Deform",
+			"Name": "UMT_Deform",
 			"Type": "Editor",
 			"LoadingPhase": "PostEngineInit"
 		},
 		{
-			"Name": "AMAP5_VmdCamera",
+			"Name": "UMT_VmdCamera",
 			"Type": "Editor",
 			"LoadingPhase": "Default"
 		},
 		{
-			"Name": "AMAP5_MetaHumanMocap",
-			"Type": "Editor",
-			"LoadingPhase": "None"
-		},
-		{
-			"Name": "AMAP5_Importer",
+			"Name": "UMT_Importer",
 			"Type": "Editor",
 			"LoadingPhase": "PostEngineInit"
 		},
 		{
-			"Name": "AMAP5_BulletRuntime",
+			"Name": "UMT_BulletRuntime",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		},
 		{
-			"Name": "AMAP5_BulletEditor",
+			"Name": "UMT_BulletEditor",
 			"Type": "UncookedOnly",
 			"LoadingPhase": "Default"
 		}
@@ -76,11 +65,13 @@
 			"Name": "VRM4U",
 			"Enabled": true,
 			"Optional": true
-		},
-		{
-			"Name": "MetaHuman",
-			"Enabled": true,
-			"Optional": true
 		}
-	]
+	],
+	"CreatedBy": "AMAP-N",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false
 }
