@@ -41,7 +41,7 @@ The following are **not** supported:
   - Compute Framework
   - Deformer Graph
 - Optional
-  - VRM4U (bundled with the UE 5.8 package; install it separately for UE 5.9; required only if you use the VRM4U material type)
+  - VRM4U (not bundled; install it separately; required only if you use the VRM4U material type)
 
 
 ## Highlights
@@ -74,7 +74,7 @@ The following are **not** supported:
 1. Set up an Unreal Engine 5.8 or 5.9 (Win64) project.
 2. Download the package that matches your engine version from [Releases](https://github.com/AMAP-N/ue5-mmd-toolkit/releases): `UMT_5-8_<version>.zip` for UE 5.8, `UMT_5-9_<version>.zip` for UE 5.9, and extract it.
 3. In the Plugins window, confirm the following are enabled: IK Rig / Control Rig / Compute Framework / Deformer Graph.
-4. (Optional) If you want to use VRM4U material types, place `Plugins/VRM4U` from the UE 5.8 package into your project's `Plugins` folder. For UE 5.9, install VRM4U separately.
+4. (Optional) If you want to use VRM4U material types, install VRM4U separately into your project's `Plugins` folder.
 5. Place the `Plugins/ue5-mmd-toolkit` folder into your project's `Plugins` folder.
 > [!TIP]
 > With the optional pieces included, the final layout should look like this:

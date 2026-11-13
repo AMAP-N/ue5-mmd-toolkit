@@ -41,7 +41,7 @@ model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
   - Compute Framework
   - Deformer Graph
 - 任意
-  - VRM4U(UE 5.8版パッケージに同梱。UE 5.9では別途導入。VRM4Uマテリアルタイプを使う場合は必要)
+  - VRM4U(同梱しません。別途導入してください。VRM4Uマテリアルタイプを使う場合は必要)
 
 
 ## 特徴
@@ -73,7 +73,7 @@ model: Sour暄 / [rendered demo](https://youtu.be/5gckcH_7DNo)
 1. Unreal Engine 5.8 または 5.9(Win64)のプロジェクトを用意します。
 2. [Releases](https://github.com/AMAP-N/ue5-mmd-toolkit/releases) から、お使いのエンジンに合うパッケージ(UE 5.8: `UMT_5-8_<バージョン>.zip`、UE 5.9: `UMT_5-9_<バージョン>.zip`)をダウンロードして展開します。
 3. 「プラグイン」ウィンドウで次が有効になっているか確認します：IK Rig / Control Rig / Compute Framework / Deformer Graph
-4. (任意)VRM4Uのマテリアルタイプを使う場合は、UE 5.8版パッケージの `Plugins/VRM4U` をプロジェクトの `Plugins` フォルダに配置します。UE 5.9ではVRM4Uを別途導入してください。
+4. (任意)VRM4Uのマテリアルタイプを使う場合は、VRM4Uを別途、プロジェクトの `Plugins` フォルダに導入します。
 5. `Plugins/ue5-mmd-toolkit` フォルダをプロジェクトの `Plugins` フォルダに配置します。
 > [!TIP]
 > 最終的な配置が次の構成になることを想定しています。(任意配置込みの場合)
